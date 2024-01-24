@@ -1,0 +1,172 @@
+{
+  "skills": {
+    "Core": [
+      {
+        "label": "Python",
+        "fontAwesomeClass": "fa-brands fa-python"
+      },
+      {
+        "label": "Bash",
+        "fontAwesomeClass": "fa-solid fa-terminal"
+      },
+      {
+        "label": "SQL",
+        "fontAwesomeClass": "fa-solid fa-database"
+      },
+      {
+        "label": "HTML",
+        "fontAwesomeClass": "fa-brands fa-html5"
+      },
+      {
+        "label": "CSS",
+        "fontAwesomeClass": "fa-brands fa-css3-alt"
+      },
+      {
+        "label": "Git",
+        "fontAwesomeClass": "fa-brands fa-git-alt"
+      },
+      {
+        "label": "Docker",
+        "fontAwesomeClass": "fa-brands fa-docker"
+      },
+      {
+        "label": "Postman",
+        "fontAwesomeClass": "fa-solid fa-user-astronaut"
+      }
+    ],
+    "Pursuing": [
+      {
+        "label": "C#",
+        "fontAwesomeClass": "fa-brands fa-microsoft"
+      },
+      {
+        "label": "Javascript",
+        "fontAwesomeClass": "fa-brands fa-js"
+      },
+      {
+        "label": "React",
+        "fontAwesomeClass": "fa-brands fa-react"
+      },
+      {
+        "label": "AWS",
+        "fontAwesomeClass": "fa-brands fa-aws"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Github Pages (This Page)",
+      "subtitle": "A Single-Page App using nothing but HTML, CSS, and some jQuery",
+      "blurb": "The 2nd version of my personal portfolio page deployed on github pages. The first version utilised a react template from another developer. For version 2, I wanted to <q><em>go back to basics</em></q> and focus on styling and accessibility",
+      "isLive": true,
+      "tags": [
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "links": [
+        {
+          "ref": "https://github.com/davebyrne222/davebyrne222.github.io",
+          "text": "Github"
+        }
+      ]
+    },
+    {
+      "title": "PI Planning Tools",
+      "subtitle": "A Command Line Tool for Reviewing SAFe Program Increments",
+      "blurb": "An example of using python to help my everyday job as a scrum master, this project generates a series of overviews that A. help to ensure a successful PI Planning event and, B. to help track progress during a PI. Please note, this is a personal project built over many years that was never intended to be shared and so, it is presented <q><em>warts and all</em></q>",
+      "isLive": true,
+      "tags": [
+        "Python",
+        "REST API",
+        "Jira"
+      ],
+      "links": [
+        {
+          "ref": "https://github.com/davebyrne222/pitools",
+          "text": "Github"
+        }
+      ]
+    },
+    {
+      "title": "<q>Songs I'm Listening To</q>",
+      "subtitle": "A FastAPI and React App I built for fun and learning",
+      "blurb": "To learn more about API development in Python, API security, React, ORM, analytics, and unit testing, I turned to another love of mine - music. I built this web-app that displays some of the songs I have been listening to recently that resonated with me. I hope that long term, this will help me with finding those elusive songs I spend an age trying to remember the name of.",
+      "isLive": false,
+      "tags": [
+        "Python",
+        "FastAPI",
+        "React",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "title": "H.Dip. Computer Science",
+      "body": "Dublin Business School (DBS)",
+      "award": "2024 (Expected, First Class Honours)",
+      "link": "https://www.dbs.ie/course/ict/higher-diploma-in-science-in-computing---software-development-part-time",
+      "isProfessional": false,
+      "blurb": ""
+    },
+    {
+      "title": "SAFe Advanced Scrum Master (SASM)",
+      "body": "Scaled Agile",
+      "award": "2022",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "SAFe 5 Practitioner (SP)",
+      "body": "Scaled Agile",
+      "award": "2021",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "Professional Scrum Master (PSM-1)",
+      "body": "Scrum.org",
+      "award": "2018",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "M.Sc. Pharmaceutical Production",
+      "body": "Institute of Technology, Tallaght",
+      "award": "2015 (First Class Honours)",
+      "link": "",
+      "isProfessional": false,
+      "blurb": ""
+    },
+    {
+      "title": "M.Sc. Astrophysics (By Research)",
+      "body": "University College Dublin (U.C.D.)",
+      "award": "2013 (Masters By Research)",
+      "link": "",
+      "isProfessional": false,
+      "blurb": ""
+    },
+    {
+      "title": "P.G. Cert. Innovation & Entrepreneurship",
+      "body": "Innovation Academy (University College Dublin)",
+      "award": "2012",
+      "link": "",
+      "isProfessional": false,
+      "blurb": ""
+    },
+    {
+      "title": "B.Sc. Physics Technology",
+      "body": "Dublin Institute of Technology (D.I.T.)",
+      "award": "2011 (First Class Honours)",
+      "link": "",
+      "isProfessional": false,
+      "blurb": ""
+    }
+  ]
+}
