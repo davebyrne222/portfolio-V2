@@ -416,6 +416,36 @@ section {
     font-family: monospace, sans-serif;
 }
 
+.about__card header {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    border-top: 2px solid var(--clr-secondary-dk);
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.about__card h3 {
+    font-size: var(--fs-p);
+    font-family: monospace;
+    font-variant: initial;
+}
+
+.about__card i {
+    margin: 0 2rem;
+    color: var(--clr-secondary-lt);
+    transition: transform 400ms ease;
+}
+
+.about-collapse {
+    display: none;
+}
+
+.about__expanded-caret {
+    transform: rotate(90deg);
+}
+
 /* MEDIA QUERIES */
 /*---------------*/
 

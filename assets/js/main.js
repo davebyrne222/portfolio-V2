@@ -131,4 +131,9 @@ $(document).ready(function () {
         $(this).toggleClass("filter-btn--pressed")
     })
 
+    $('.about__card header').click(function() {
+        $(this).find('i').toggleClass('about__expanded-caret')
+        $(this).siblings('.about-collapse').slideToggle('slow');
+    });
+
 });
