@@ -294,7 +294,7 @@ section {
 .skill {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 6rem;
     height: 6rem;
