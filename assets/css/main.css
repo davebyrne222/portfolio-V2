@@ -245,9 +245,13 @@ section {
 /* projects */
 .project-card {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: 1rem;
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.project-techs {
+    text-align: end;
 }
 
 .project-title,
@@ -468,7 +472,7 @@ section {
     }
 
     .project-card {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .skill-cntr {
