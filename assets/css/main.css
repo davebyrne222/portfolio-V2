@@ -268,7 +268,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    gap: 1rem;
     margin: 1rem 0;
     justify-content: space-between;
 }
@@ -277,8 +276,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 4rem;
-    width: 4rem;
+    flex-shrink: 0;
+    width: 6rem;
 }
 
 .skill-label p {
@@ -286,11 +285,10 @@ section {
 }
 
 .skill-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
 }
 
 .skill {
@@ -298,11 +296,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .skill i {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--clr-secondary-lt);
 }
 
@@ -474,5 +473,14 @@ section {
 
     .project-card {
         gap: 1rem;
+    }
+
+    .skill-cntr {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .skill-list {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
