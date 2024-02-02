@@ -164,9 +164,9 @@ section {
 
 #tagline p.then::before,
 #tagline p.then::after{
-    /*position: relative;*/
     font-weight: bold;
     font-family: monospace, sans-serif;
+    font-size: var(--fs-f);
     color: var(--clr-secondary-dk);
 }
 
