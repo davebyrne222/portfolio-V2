@@ -96,7 +96,6 @@ function setActiveNavLinkOnScroll() {
 }
 
 function onFilterBtnClick(isProfessional){
-    // hide content
     $('[data-professional="' +  isProfessional + '"]').toggle()
 }
 
