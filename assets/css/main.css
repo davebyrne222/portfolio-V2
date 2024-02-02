@@ -121,7 +121,7 @@ main {
     padding: 0 6rem;
 }
 
-header#site-header {
+#site-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -497,8 +497,8 @@ section {
         padding: 0 2rem;
     }
 
-    header#site-header {
-        position: relative;
+    #site-header {
+        position: static;
         padding: 2rem 0;
         height: 80vh;
     }

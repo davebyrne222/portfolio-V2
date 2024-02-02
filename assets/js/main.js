@@ -87,7 +87,6 @@ function setActiveNavLinkOnScroll() {
 
         if (rect.top >= 0) {
             const targetId = $(this).attr('id');
-            // const navLink = $('#site-nav a[href="#${targetId}"]');
             const navLink = $('#site-nav a[href="#' + targetId + '"]');
             setActiveNavLink(navLink)
             return false;
@@ -116,8 +115,15 @@ $(document).ready(function () {
         setActiveNavLinkOnScroll();
     });
 
-    $('#site-nav a').click(function () {
-        setActiveNavLink($(this));
+    $('#site-nav a').click(function (e) {
+        e.preventDefault();
+
+        let targetId = $(this).attr('href')
+        let targetOffset = $(targetId).offset().top;
+
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, 0);
     });
 
     $('button#filter__academic').click(function (e){

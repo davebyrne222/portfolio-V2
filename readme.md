@@ -2,7 +2,5 @@
 - [ ] Add proprietary projects?
 - [ ] Review accessibility
 - [ ] Implement Dark Mode (w/system check)
-- [ ] Add collapsable for About
-- [ ] Flip project cars for more info?
+- [ ] Flip project cards for more info?
 - [ ] Animate page load?
-- [ ] Add nav on mobile# portfolio-V2
