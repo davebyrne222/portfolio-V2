@@ -187,6 +187,12 @@ section {
     position: relative;
     margin: 2rem 0;
     color: var(--clr-secondary-lt);
+    font-size: var(--fs-f);
+    line-height: 1rem;
+}
+
+#experience-note a {
+    font-size: var(--fs-f);
 }
 
 #experience-note::before{
@@ -198,14 +204,18 @@ section {
     color: var(--clr-secondary-dk);
 }
 
-/* Nav */
-#nav-cntr {
+#blurb {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    margin-top: 2rem;
+    height: 50vh;
+    justify-content: center;
 }
 
+#blurb--header {
+    display: none;
+}
+
+/* Nav */
 #site-nav {
     display: flex;
     flex-direction: column;
@@ -239,6 +249,10 @@ section {
 
 #site-nav a.site-nav__btn--active::before,
 #site-nav a.site-nav__btn--active::after {
+    display: none;
+}
+
+#nav-mobile {
     display: none;
 }
 
@@ -393,7 +407,6 @@ section {
     background-color: var(--clr-secondary-dk);
     border: 5px solid var(--clr-background);
     border-radius: 50%;
-    z-index: 1;
 }
 
 .timeline__entry p{
@@ -439,6 +452,10 @@ section {
 }
 
 .about-collapse {
+    display: flex;
+}
+
+.hidden {
     display: none;
 }
 
@@ -481,15 +498,68 @@ section {
 
     header#site-header {
         position: relative;
-        padding-bottom: 2rem;
-        height: 50vh;
+        padding: 2rem 0;
+        height: 80vh;
     }
 
     #tagline {
         text-indent: 3em;
     }
 
+    #blurb {
+        display: none;
+    }
+
+    #blurb--header {
+        display: initial;
+    }
+
     #site-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: var(--clr-secondary-dk);
+        width: 100%;
+        height: 4rem;
+        margin: 0;
+        padding: 0.5rem 0;
+        z-index: 999;
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav-mobile li {
+        height: 100%;
+        padding: 0;
+    }
+
+    #nav-mobile a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: var(--fs-f);
+    }
+
+    #nav-mobile i {
+        color: inherit;
+        margin: 0.5rem 0;
+    }
+
+    #nav-mobile a:before,
+    #nav-mobile a:after {
         display: none;
     }
 
@@ -497,8 +567,11 @@ section {
         padding-top: 0;
     }
 
-    #blurb {
-        justify-content: center;
+    section > header {
+        position: sticky;
+        top: 0;
+        background-color: var(--clr-background);
+        z-index: 1;
     }
 
     .project-card {
