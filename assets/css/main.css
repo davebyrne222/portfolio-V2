@@ -587,4 +587,8 @@ section {
     .skill-list {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .timeline {
+        margin-left: 0;
+    }
 }
