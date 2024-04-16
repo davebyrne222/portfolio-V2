@@ -3,10 +3,9 @@
 /* variables */
 :root {
     /* colors */
-    --clr-primary-dk: #E85A4F;
-    --clr-primary-lt: #E98074;
+    --clr-primary: #C52716;
     --clr-secondary-dk: #D8C3A5;
-    --clr-secondary-lt: #8E8D8A;
+    --clr-secondary-lt: #63625F;
     --clr-background: #EAE7DC;
     --clr-font: #212427;
 
@@ -38,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: var(--fs-h1);
-    color: var(--clr-primary-dk);
+    color: var(--clr-primary);
     font-weight: 900;
 }
 
@@ -49,7 +48,7 @@ h2 {
 }
 
 h2 span {
-    background-color: var(--clr-primary-lt);
+    background-color: var(--clr-primary);
     padding: 0 1rem;
     margin-left: -1rem;
     color: var(--clr-background);
@@ -73,7 +72,7 @@ p{
 }
 
 a {
-    color: var(--clr-primary-dk);
+    color: var(--clr-primary);
     font-size: var(--fs-p);
     font-weight: 400;
 }
@@ -245,7 +244,7 @@ section {
 }
 
 #site-nav a.site-nav__btn--active{
-    color: var(--clr-primary-dk);
+    color: var(--clr-primary);
 }
 
 #site-nav a.site-nav__btn--active::before,
@@ -262,7 +261,7 @@ section {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .project-techs {
@@ -276,6 +275,16 @@ section {
 
 .project-summary {
     font-size: var(--fs-f);
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.project-links a {
+    margin-right: 1rem;
 }
 
 /* tech stack */
@@ -488,7 +497,7 @@ section {
 @media only screen and (max-width: 767.98px) {
 
     html {
-        scroll-padding-top: 70px; /* Prevent anchor links going behind nav */
+        scroll-padding-top: 70px;
     }
 
     main {

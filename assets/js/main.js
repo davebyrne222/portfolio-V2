@@ -33,7 +33,6 @@ function _populateProjects(projects) {
                 return `<a href="${link.ref}">${link.text}</a>`;
             }).join('');
 
-
         $('#projects').append(
             `<div class="project-card">
                 <div class="project-techs">
@@ -43,7 +42,7 @@ function _populateProjects(projects) {
                     <p class="project-title">${project.title}</p>
                     <p class="project-subtitle">${project.subtitle}</p>
                     <p class="project-summary">${project.blurb}</p>
-                    ${links}
+                    <p class="project-links">${links}</p>
                 </div>
             </div>`
         );
