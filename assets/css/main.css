@@ -261,7 +261,7 @@ section {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .project-techs {
@@ -275,6 +275,16 @@ section {
 
 .project-summary {
     font-size: var(--fs-f);
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.project-links a {
+    margin-right: 1rem;
 }
 
 /* tech stack */
@@ -487,7 +497,7 @@ section {
 @media only screen and (max-width: 767.98px) {
 
     html {
-        scroll-padding-top: 70px; /* Prevent anchor links going behind nav */
+        scroll-padding-top: 70px;
     }
 
     main {
