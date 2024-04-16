@@ -1,6 +1,0 @@
-- [ ] Add links to education
-- [ ] Add proprietary projects?
-- [ ] Review accessibility
-- [ ] Implement Dark Mode (w/system check)
-- [ ] Flip project cards for more info?
-- [ ] Animate page load?
