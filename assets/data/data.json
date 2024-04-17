@@ -57,7 +57,7 @@
     {
       "title": "davebyrne.site (This Page)",
       "subtitle": "A simple static website using nothing but HTML, CSS, and some jQuery, hosted on AWS using Amplify & Route53",
-      "blurb": "The 2nd version of my personal portfolio page. The first version utilised a react template from another developer. For version 2, I wanted to <q><em>go back to basics</em></q> and focus on styling and accessibility.",
+      "blurb": "The 2nd version of my personal portfolio page. The first version utilised a react template from another engineer. For version 2, I wanted to <q><em>go back to basics</em></q> and focus on styling and accessibility.",
       "isLive": true,
       "tags": [
         "HTML",

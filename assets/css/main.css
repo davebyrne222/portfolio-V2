@@ -56,7 +56,7 @@ h2 span {
 
 h2 span:after {
     color: var(--clr-background);
-    content: ";";
+    content: ";" / "";
     margin-left: 5px;
 }
 
@@ -109,15 +109,36 @@ a {
 html, body {
     margin: 0;
     width: 100vw;
+    box-sizing: border-box;
     background: var(--clr-background);
     scroll-behavior: smooth;
 }
 
-main {
+#skip-link {
+    position: absolute;
+    overflow: hidden;
+    top: auto;
+    left: -10000px;
+    width: 0;
+    height: 0;
+}
+
+#skip-link:focus {
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+}
+
+#layout-cntr {
+    padding: 0 6rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6rem;
-    padding: 0 6rem;
+}
+
+main {
+    padding: 6rem 0;
 }
 
 #site-header {
@@ -130,10 +151,6 @@ main {
     height: 100vh;
     padding: 6rem 0;
     box-sizing: border-box;
-}
-
-#content-cntr {
-    padding: 6rem 0;
 }
 
 section {
@@ -171,14 +188,14 @@ section {
 }
 
 #tagline p.then::before {
-    content: ".then( ";
+    content: ".then( " / "";
     position: absolute;
     transform: translateX(-100%);
     padding-right: 1ch;
 }
 
 #tagline p.then::after{
-    content: ")";
+    content: ")" / "";
     padding-left: 1ch;
 }
 
@@ -196,7 +213,7 @@ section {
 }
 
 #experience-note::before{
-    content: "HTTP/1.1 405:";
+    content: "HTTP/1.1 405:" / "";
     position: absolute;
     top: -1rem;
     font-weight: bold;
@@ -207,12 +224,8 @@ section {
 #blurb {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 20vh;
     justify-content: center;
-}
-
-#blurb--header {
-    display: none;
 }
 
 /* Nav */
@@ -235,11 +248,11 @@ section {
 
 #site-nav a:before {
     color: var(--clr-secondary-lt);
-    content: "/* ";
+    content: "/* " / "";
 }
 
 #site-nav a:after {
-    content: " */";
+    content: " */" / "";
     color: var(--clr-secondary-lt);
 }
 
@@ -350,11 +363,11 @@ section {
 }
 
 .tag::before {
-    content: "{";
+    content: "{" / "";
 }
 
 .tag::after {
-    content: "}";
+    content: "}" / "";
 }
 
 /* Education */
@@ -369,8 +382,8 @@ section {
 .filter-btn {
     background-color: transparent;
     border: 1px solid var(--clr-secondary-dk);
-    height: 1.5rem;
-    border-radius: 1.5rem;
+    height: 2rem;
+    border-radius: 2rem;
     text-align: center;
     color: var(--clr-secondary-lt);
     cursor: pointer;
@@ -389,7 +402,7 @@ section {
 }
 
 .timeline::after {
-    content: '';
+    content: "" / "";
     position: absolute;
     width: 0;
     background-color: transparent;
@@ -408,7 +421,7 @@ section {
 }
 
 .timeline__container::after {
-    content: '';
+    content: "" / "";
     position: absolute;
     width: 10px;
     height: 10px;
@@ -430,7 +443,7 @@ section {
 
 #about__tldr::before {
     position: absolute;
-    content: "{TL;DR}";
+    content: "{TL;DR}" / "";
     font-size: var(--fs-p);
     color: var(--clr-secondary-dk);
     top: 2rem;
@@ -489,7 +502,7 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 1200px){
-    main {
+    #layout-cntr {
         grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     }
 }
@@ -500,7 +513,7 @@ section {
         scroll-padding-top: 70px;
     }
 
-    main {
+    #layout-cntr {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 2rem;
         padding: 0 2rem;
@@ -514,14 +527,6 @@ section {
 
     #tagline {
         text-indent: 3em;
-    }
-
-    #blurb {
-        display: none;
-    }
-
-    #blurb--header {
-        display: initial;
     }
 
     #site-nav {

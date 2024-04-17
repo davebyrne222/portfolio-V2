@@ -30,7 +30,7 @@ function _populateProjects(projects) {
 
         let links = !project.isLive ? `<p>[Coming Soon]</p>` :
             project.links.map(link => {
-                return `<a href="${link.ref}">${link.text}</a>`;
+                return `<a href="${link.ref}" aria-describedby="external-link">${link.text}</a>`;
             }).join('');
 
         $('#projects').append(
@@ -93,12 +93,44 @@ function setActiveNavLinkOnScroll() {
     });
 }
 
-function onFilterBtnClick(isProfessional){
-    $('[data-professional="' +  isProfessional + '"]').toggle()
+function onFilterBtnClick(isProfessional) {
+
+    const profBtn = $('button#filter__prof');
+    const academicBtn = $('button#filter__academic');
+
+    function toggleProfessional() {
+        profBtn.toggleClass("filter-btn--pressed");
+        $('[data-professional="false"]').toggle();
+    }
+
+    function toggleAcademic() {
+        academicBtn.toggleClass("filter-btn--pressed");
+        $('[data-professional="true"]').toggle();
+    }
+
+    switch (isProfessional) {
+        case true:
+            toggleProfessional();
+
+            if (academicBtn.hasClass("filter-btn--pressed")) {
+                toggleAcademic();
+            }
+
+            break
+
+        case false:
+            toggleAcademic();
+
+            if (profBtn.hasClass("filter-btn--pressed")) {
+                toggleProfessional();
+            }
+
+            break
+
+    }
 }
 
 $(document).ready(function () {
-    // Make an AJAX request to load JSON data
     $.ajax({
         url: 'assets/data/data.json',
         dataType: 'json',
@@ -125,17 +157,15 @@ $(document).ready(function () {
         }, 0);
     });
 
-    $('button#filter__academic').click(function (e){
+    $('button#filter__academic').click(function (e) {
+        onFilterBtnClick(false);
+    })
+
+    $('button#filter__prof').click(function () {
         onFilterBtnClick(true);
-        $(this).toggleClass("filter-btn--pressed")
     })
 
-    $('button#filter__prof').click(function (){
-        onFilterBtnClick(false)
-        $(this).toggleClass("filter-btn--pressed")
-    })
-
-    $('.about__card header').click(function() {
+    $('.about__card header').click(function () {
         $(this).find('i').toggleClass('about__expanded-caret')
         $(this).siblings('.about-collapse').slideToggle('slow');
     });
