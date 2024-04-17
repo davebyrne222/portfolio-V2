@@ -382,8 +382,8 @@ section {
 .filter-btn {
     background-color: transparent;
     border: 1px solid var(--clr-secondary-dk);
-    height: 1.5rem;
-    border-radius: 1.5rem;
+    height: 2rem;
+    border-radius: 2rem;
     text-align: center;
     color: var(--clr-secondary-lt);
     cursor: pointer;
