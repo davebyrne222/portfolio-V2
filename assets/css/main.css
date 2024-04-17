@@ -114,7 +114,23 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body {
+#skip-link {
+    position: absolute;
+    overflow: hidden;
+    top: auto;
+    left: -10000px;
+    width: 0;
+    height: 0;
+}
+
+#skip-link:focus {
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+}
+
+#layout-cntr {
     padding: 0 6rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -490,7 +506,7 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 1200px){
-    body {
+    #layout-cntr {
         grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     }
 }
@@ -501,7 +517,7 @@ section {
         scroll-padding-top: 70px;
     }
 
-    body {
+    #layout-cntr {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 2rem;
         padding: 0 2rem;
