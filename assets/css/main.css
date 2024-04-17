@@ -56,7 +56,7 @@ h2 span {
 
 h2 span:after {
     color: var(--clr-background);
-    content: ";";
+    content: ";" / "";
     margin-left: 5px;
 }
 
@@ -188,14 +188,14 @@ section {
 }
 
 #tagline p.then::before {
-    content: ".then( ";
+    content: ".then( " / "";
     position: absolute;
     transform: translateX(-100%);
     padding-right: 1ch;
 }
 
 #tagline p.then::after{
-    content: ")";
+    content: ")" / "";
     padding-left: 1ch;
 }
 
@@ -213,7 +213,7 @@ section {
 }
 
 #experience-note::before{
-    content: "HTTP/1.1 405:";
+    content: "HTTP/1.1 405:" / "";
     position: absolute;
     top: -1rem;
     font-weight: bold;
@@ -248,11 +248,11 @@ section {
 
 #site-nav a:before {
     color: var(--clr-secondary-lt);
-    content: "/* ";
+    content: "/* " / "";
 }
 
 #site-nav a:after {
-    content: " */";
+    content: " */" / "";
     color: var(--clr-secondary-lt);
 }
 
@@ -363,11 +363,11 @@ section {
 }
 
 .tag::before {
-    content: "{";
+    content: "{" / "";
 }
 
 .tag::after {
-    content: "}";
+    content: "}" / "";
 }
 
 /* Education */
@@ -402,7 +402,7 @@ section {
 }
 
 .timeline::after {
-    content: '';
+    content: "" / "";
     position: absolute;
     width: 0;
     background-color: transparent;
@@ -421,7 +421,7 @@ section {
 }
 
 .timeline__container::after {
-    content: '';
+    content: "" / "";
     position: absolute;
     width: 10px;
     height: 10px;
@@ -443,7 +443,7 @@ section {
 
 #about__tldr::before {
     position: absolute;
-    content: "{TL;DR}";
+    content: "{TL;DR}" / "";
     font-size: var(--fs-p);
     color: var(--clr-secondary-dk);
     top: 2rem;
