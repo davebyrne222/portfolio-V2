@@ -30,7 +30,7 @@ function _populateProjects(projects) {
 
         let links = !project.isLive ? `<p>[Coming Soon]</p>` :
             project.links.map(link => {
-                return `<a href="${link.ref}">${link.text}</a>`;
+                return `<a href="${link.ref}" aria-describedby="external-link">${link.text}</a>`;
             }).join('');
 
         $('#projects').append(

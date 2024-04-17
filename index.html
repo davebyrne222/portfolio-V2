@@ -22,6 +22,7 @@
 </head>
 <body>
     <a href="#main" id="skip-link">Skip to main content</a>
+    <p id="external-link" hidden>This link opens in this same window / tab</p>
     <div id="layout-cntr">
         <header id="site-header">
             <div>
@@ -31,8 +32,10 @@
                     <p class="then">Scrum Master</p>
                     <p class="then">Software Engineer</p>
                 </div>
-                <p id="experience-note"> An unusual set of experiences but not as strange as you may think. See <a
-                        href="#about">About Me</a> for an overview</p>
+                <p id="experience-note"> An unusual set of experiences but not as strange as you may think. See
+                    <a href="#about" aria-labelledby="experience-note__link-lbl">About Me</a> for an overview
+                    <span hidden id="experience-note__link-lbl">Navigates to the About Me Section</span>
+                </p>
             </div>
             <nav id="site-nav">
                 <ul class="no-style-list" id="nav-desktop">
@@ -87,16 +90,16 @@
             <div>
                 <a aria-labelledby="github-lbl" class="icon-btn" href="https://github.com/davebyrne222/">
                     <i aria-hidden="true" class="fa-brands fa-github"></i>
-                    <span hidden id="github-lbl">Github</span>
+                    <span hidden id="github-lbl">Open my GitHub in the same window/tab</span>
                 </a>
                 <a aria-labelledby="linkedin-lbl" class="icon-btn"
                    href="https://www.linkedin.com/in/david-byrne-dublin/">
                     <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
-                    <span hidden id="linkedin-lbl">LinkedIn</span>
+                    <span hidden id="linkedin-lbl">Open my LinkedIn in the same window/tab</span>
                 </a>
                 <a aria-labelledby="email-lbl" class="icon-btn" href="mailto:david.byrne222@gmail.com">
                     <i aria-hidden="true" class="fa-regular fa-envelope"></i>
-                    <span hidden id="email-lbl">Email</span>
+                    <span hidden id="email-lbl">Email me (opens email client in new window or tab)</span>
                 </a>
             </div>
         </header>
