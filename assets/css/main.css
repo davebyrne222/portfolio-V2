@@ -224,12 +224,8 @@ section {
 #blurb {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 20vh;
     justify-content: center;
-}
-
-#blurb--header {
-    display: none;
 }
 
 /* Nav */
@@ -531,14 +527,6 @@ section {
 
     #tagline {
         text-indent: 3em;
-    }
-
-    #blurb {
-        display: none;
-    }
-
-    #blurb--header {
-        display: initial;
     }
 
     #site-nav {
