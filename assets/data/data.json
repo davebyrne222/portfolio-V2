@@ -106,6 +106,38 @@
   ],
   "education": [
     {
+      "title": "AWS Academy - Cloud Architecting",
+      "body": "Amazon Web Services Training and Certification",
+      "award": "2024",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "AWS Academy - Cloud Developing",
+      "body": "Amazon Web Services Training and Certification",
+      "award": "2024",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "AWS Academy - Cloud Web Application Builder",
+      "body": "Amazon Web Services Training and Certification",
+      "award": "2024",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
+      "title": "AWS Academy - AWS Academy Cloud Foundations",
+      "body": "Amazon Web Services Training and Certification",
+      "award": "2024",
+      "link": "",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
       "title": "H.Dip. Computer Science",
       "body": "Dublin Business School (DBS)",
       "award": "2024 (Expected, First Class Honours)",
