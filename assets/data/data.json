@@ -106,6 +106,22 @@
   ],
   "education": [
     {
+      "title": "H.Dip. Computer Science",
+      "body": "Dublin Business School (DBS)",
+      "award": "2025 (Expected, First Class Honours)",
+      "link": "https://www.dbs.ie/course/ict/higher-diploma-in-science-in-computing---software-development-part-time",
+      "isProfessional": false,
+      "blurb": ""
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner (CLF-C02)",
+      "body": "Amazon Web Services Training and Certification",
+      "award": "2024",
+      "link": "https://aws.amazon.com/certification/certified-cloud-practitioner/?ch=sec&sec=rmg&d=1",
+      "isProfessional": true,
+      "blurb": ""
+    },
+    {
       "title": "AWS Academy - Cloud Architecting",
       "body": "Amazon Web Services Training and Certification",
       "award": "2024",
@@ -135,14 +151,6 @@
       "award": "2024",
       "link": "",
       "isProfessional": true,
-      "blurb": ""
-    },
-    {
-      "title": "H.Dip. Computer Science",
-      "body": "Dublin Business School (DBS)",
-      "award": "2024 (Expected, First Class Honours)",
-      "link": "https://www.dbs.ie/course/ict/higher-diploma-in-science-in-computing---software-development-part-time",
-      "isProfessional": false,
       "blurb": ""
     },
     {
